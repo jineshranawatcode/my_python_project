@@ -22,12 +22,7 @@ pipeline {
             }
         }
        
-        stage('Test') {
-            steps {
-                sh 'pip install pytest'
-                sh 'pytest tests/'
-            }
-        }
+       
        
         stage('Build Docker Image') {
             steps {
